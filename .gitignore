@@ -7,7 +7,7 @@ notes.txt
 
 .idea
 MBTA
-data
+data/
 
 # C extensions
 *.so
