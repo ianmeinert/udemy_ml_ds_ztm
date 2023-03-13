@@ -10,7 +10,6 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.ensemble import RandomForestClassifier, RandomForestRegressor
 
 
-@staticmethod
 def fill_missing_data(data):
     for label, content in data.items():
         # Check for which numeric columns have null values
@@ -28,7 +27,6 @@ def fill_missing_data(data):
             data[label] = pd.Categorical(content).codes + 1
 
 
-@staticmethod
 def string_cols_to_category(data):
     # This will turn all of the string values into category values
     for label, content in data.items():
